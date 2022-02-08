@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { Fragment, useState } from 'react';
 import axios from 'axios';
 import { Button } from 'reactstrap'
 
@@ -19,7 +19,8 @@ function Login() {
     }
   
     return (
-      <div>
+     <Fragment>
+        <div>
         <form>
           Email<br/>
           <input type="email" name="email" id="email" onChange={(e) => setEmail(e.target.value)}></input><br/>
@@ -29,6 +30,10 @@ function Login() {
         </form>
         
       </div>
+      <div>
+        
+      </div>
+     </Fragment>
     );
 }
 

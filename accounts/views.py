@@ -6,7 +6,7 @@ from.models import User
 from.serializer import UserSerializer
 
 class HelloView(APIView):
-    permission_classes = (IsAuthenticated,)
+    # permission_classes = (IsAuthenticated,)
 
     def get(self, request):
         content = {'message': 'Hello, World!'}
